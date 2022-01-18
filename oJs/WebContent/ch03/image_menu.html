@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	overImg=new Array();
+	outImg=new Array();
+	for(var i=0; i<4; i++) {
+	overImg[i]="../images/"+i+"over.jpg";
+	outrImg[i]="../images/"+i+"out.jpg";
+	}
+	function ov(num) {
+		document.images[num].src=overImg[num];
+	}
+	function op(num) {
+		alert("onmousedown");
+		document.images[num].src="0pr.jpg";
+	}
+	function ot(num) {
+		document.images[num].src=outImg[num];
+	}
+</script>
+</head>
+<body>
+	<img src="../images/0out.jpg" onmouseover="ov(0)" onmouseout="ot(0)" onclick="op(0)"><p>
+	<img src="../images/1out.jpg" onmouseover="ov(1)" onmouseout="ot(1)"><p>
+	<img src="../images/2out.jpg" onmouseover="ov(2)" onmouseout="ot(2)"><p>
+	<img src="../images/3out.jpg" onmouseover="ov(3)" onmouseout="ot(3)">
+</body>
+</html>

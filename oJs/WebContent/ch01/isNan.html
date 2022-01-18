@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Is Not A Number</title>
+<script type="text/javascript">
+	var num=prompt("몇 단 구구단을 원하시는지 입력하시고 확인 버튼 꼭 눌러주세요","5");
+	if(isNaN(num))
+		document.write("바보냐 숫자 몰라");
+	else if(num==null)
+		document.write("종료합니다")
+	else
+		for(var i=1; i<=9; i++)
+			document.write(num+" * "+i+" = "+(num*i)+"<br>");
+</script>
+</head>
+<body>
+
+</body>
+</html>
